@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #dde1e7;
+}
+
+h1 {
+    margin-top: 4rem;
+    user-select: none;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(49, 49, 49);
+}
+.mode {
+    margin-top: 4rem;
+    user-select: none;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(49, 49, 49);
+}
+.mode .checkbox {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+   
+  }
+  .mode .checkbox-label {
+    background: rgb(49, 49, 49);
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    width: 100px;
+    height: 26px;
+    /* margin-bottom: 400px; */
+    border-radius: 40px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+ 
+  }
+  
+  .fa-moon {color: #dde1e7;}
+  
+  .fa-sun {color: #dde1e7;}
+  
+  .checkbox-label .ball {
+    background-color: #dde1e7;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(36px)
+  }
+
+/* dark mode starts */
+ 
+.Dark-mode{
+    background-color: rgb(49, 49, 49);
+}
+.Dark-mode h1{
+color: rgba(255,255,255,0.45);
+}
+ .Dark-mode  .container {
+    box-shadow: inset -5px -5px 9px rgb(55, 55, 55), inset 5px 5px 9px rgba(159, 159, 159, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.Dark-mode .time{
+    font-size: 8rem;
+    margin-bottom: 10px;
+    box-shadow: -5px -5px 9px rgba(43, 47, 54, 0.3), 5px 5px 9px rgba(172, 172, 172, 0.45);
+    color: rgba(255,255,255,0.45);
+    user-select: none;
+    border-radius: 25px;
+ 
+}
+
+.Dark-mode .controls button {
+    color: rgba(255,255,255,0.45);
+    margin: 20px 10px;
+    background-color: transparent;
+    box-shadow: -5px -5px 9px rgba(43, 47, 54, 0.3), 5px 5px 9px rgba(172, 172, 172, 0.45);
+    padding: 15px 25px 15px 25px;
+    font-size: 2rem;
+    border-radius: 25px;
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+.Dark-mode .lapping{
+    color: rgba(255,255,255,0.45);
+}
+
+/* dark mode ends */
+.container {
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+ .time{
+    font-size: 8rem;
+    margin-bottom: 10px;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    color: rgb(49, 49, 49);
+    user-select: none;
+    border-radius: 25px;
+ 
+}
+
+.controls button {
+    color: rgb(49, 49, 49);
+    margin: 20px 10px;
+    background-color: transparent;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    padding: 15px 25px 15px 25px;
+    font-size: 2rem;
+    border-radius: 25px;
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+.lapping{
+    color: rgb(49, 49, 49);
+}
+@media(max-width:480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .container {
+        max-width: 370px;
+        max-height: 300px;
+    }
+    .time {
+        font-size: 4rem;
+    }
+    .controls button {
+        padding: 5px;
+        margin: 0.5px;
+        font-size: 20px;
+    }
+}
+@media(max-width:480px) {
+    .Dark-mode h1 {
+        font-size: 1.2rem;
+    }
+    .Dark-mode .container {
+        max-width: 370px;
+        max-height: 300px;
+    }
+    .Dark-mode .time {
+        font-size: 4rem;
+    }
+    .Dark-mode .controls button {
+        padding: 5px;
+        margin: 0.5px;
+        font-size: 20px;
+    }
+}

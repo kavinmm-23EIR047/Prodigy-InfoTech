@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    
+ <!-- main page starts -->
+    <h1><i class="fa-solid fa-stopwatch"></i> Stopwatch</h1>
+    <div class="Dark-mode"></div>
+   <div class="mode">
+   
+      <input type="checkbox" class="checkbox" id="checkbox" onclick="toggleMode()">
+      <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <span class="ball"></span>
+      </label>
+   </div>
+   </div>
+    <div class="container">
+       
+        <div class="time">
+            00:00:00
+        </div>
+       
+
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="lap">Lap</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="lapping">
+            <h4 id = "lap1"> </h4>
+            <h4 id = "lap2"> </h4>
+            <h4 id = "lap3"> </h4>
+            <h4 id = "lap4"> </h4>
+            <h4 id = "lap5"> </h4>
+        </div>
+    </div>
+
+
+<!-- main page ends -->
+    <script src="js/script.js"></script>
+</body>
+</html>
